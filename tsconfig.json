@@ -1,12 +1,15 @@
 {
-  "include": ["src", "types"],
+  "include": ["src", "config", "config/jest"],
+  "exclude": ["dist", "node_modules"],
   "compilerOptions": {
+    "target": "es5",
     "module": "esnext",
-    "lib": ["es6", "dom", "es2016", "es2017"],
+    "lib": ["dom", "esnext"],
     "importHelpers": true,
     "declaration": true,
     "sourceMap": true,
     "rootDir": "./src",
+    "outDir": "./dist/esm",
     "strict": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
@@ -17,7 +20,6 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "target": "es5",
+    "types": ["@testing-library/jest-dom", "jest"]
   }
 }
