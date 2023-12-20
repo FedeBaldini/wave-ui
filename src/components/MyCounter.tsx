@@ -1,6 +1,10 @@
 import { useState } from "react";
 
-export function MyCounter({ value = 0 }: { value?: number }) {
+export interface Props {
+  value?: number;
+}
+
+export function MyCounter({ value = 0 }: Props) {
   const [counter, setCounter] = useState(value);
 
   const onMinus = () => {
