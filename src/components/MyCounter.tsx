@@ -17,7 +17,7 @@ export function MyCounter({ value = 0 }: Props) {
 
   return (
     <div>
-      <h1>Counter: {counter}</h1>
+      <h1 className="text-red-700">Counter: {counter}</h1>
       <button onClick={onMinus}>-</button>
       <button onClick={onPlus}>+</button>
     </div>
