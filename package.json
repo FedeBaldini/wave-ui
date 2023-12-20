@@ -15,7 +15,7 @@
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "test": "jest",
     "prepare": "husky install && yarn build",
-    "prepublishOnly": "yarn test && yarn prettier"
+    "prepublishOnly": "yarn test && yarn format"
   },
   "keywords": [
     "react",
